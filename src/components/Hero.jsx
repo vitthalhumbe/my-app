@@ -28,7 +28,7 @@ export default function Hero() {
                     <div className="resume-button">
                         <a href="/Vitthal_Humbe_Resume.pdf" download>
                             <button className="btn-resume">
-                                Resume <ArrowRight size={20} />
+                                Resume   <ArrowRight size={25} />
                             </button>
                             
                         </a>
