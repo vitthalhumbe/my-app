@@ -1,11 +1,15 @@
 import Image from "next/image";
 import "./hero.css";
+import ThemeToggle from "./ThemeToggle";
 import { ArrowRight } from "lucide-react";
 
 
 export default function Hero() {
     return (
         <section className="hero">
+            <div className="theme">
+                <ThemeToggle />
+            </div>
             <div className="text">
 
                 <h1 className="hero-text">Vitthal Humbe</h1>
