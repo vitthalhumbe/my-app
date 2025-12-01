@@ -27,6 +27,7 @@
 }
 
 .hero-text {
+    user-select: none;
     color: var(--text);
     font-size: 14rem;
     font-weight: 1300;
@@ -139,4 +140,17 @@
 
 .theme-toggle:hover {
   transform: scale(1.05);
+}
+.hero-text span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

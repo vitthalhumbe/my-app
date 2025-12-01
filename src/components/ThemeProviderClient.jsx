@@ -4,7 +4,12 @@ import { ThemeProvider } from "next-themes";
 
 export default function ThemeProviderClient({ children }) {
   return (
-    <ThemeProvider attribute="class" defaultTheme="light">
+    <ThemeProvider
+      attribute="class"
+      defaultTheme="system"
+      enableSystem={true}
+      disableTransitionOnChange={true}
+    >
       {children}
     </ThemeProvider>
   );

@@ -11,8 +11,19 @@ export default function Hero() {
                 <ThemeToggle />
             </div>
             <div className="text">
+<div className="hero-text">
+  {"Vitthal Humbe".split("").map((char, i) => (
+    <span
+      key={i}
+      style={{ animationDelay: `${i * 0.05}s` }}
+      className="hero-letter"
+    >
+      {char === " " ? "\u00A0" : char}
+    </span>
+  ))}
+</div>
 
-                <h1 className="hero-text">Vitthal Humbe</h1>
+
             </div>
             <div className="content">
                 <div className="left">
